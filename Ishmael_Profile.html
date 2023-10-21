@@ -3,18 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="saisanastyle.css">
+    <script>
+       function Background(sw) 
+       {
+        var pic;
+         if (sw == 0) 
+        {
+            pic = "croper3.png"
+        } 
+        else 
+        {
+            pic = "castle in the sky.png"
+        }
+         document.getElementsByClassName("parallax").url = pic;
+       }
+    </script>
 
 </head>
 <body>
     
     <div class="parallax"></div>
-
+    
 
 
 <div style="height: 700px;background-color:#F9DFE2;font-size:20px;color:#D81E35">
     <legend style="background-color:#37232F;width: fit-content;">About me</legend>
+    <nav>
+        <ul>
+          <li><strong>About me</strong></li>
+          <li><a href="Ishmael_Achievements.html" style="color:#D81E35">Achievement</a></li>
+          <li><a href="Ishmael_Communications.html" style="color:#D81E35">Contact</a></li>
+          <li><a href="Ishmael_Qualifications.html" style="color:#D81E35">Qualifications</a></li>
+          <li><a href="Ishmael_Reflection.html" style="color:#D81E35">Reflections</a></li>
+        </ul>
+      </nav>
 Hello, Kamusta, ສະບາຢດດີ. My name is Ishmael Sopha, I sometimes go by my Lao name ໄຊຊະນະ, which I use an alternative English spelling for, which is "Saisana".
 It means "Victory" in Lao. Among my family (and only my family) they call me "Aaron", my middle name.
 <br><br>
@@ -28,6 +52,8 @@ I'm the middle child, my older brother is 24, and my younger brother is 8.
 My favorite movie is Kikis Delivery Service.
 <br><br>
  <img src="KIKI.png" alt="Kikis" height="250px" width="fit-content">
+ <button type="button" onclick="Background(1)">Background 1</button>
+ <button type="button" onclick="Background(0)">Background 2</button>
 </div>
 
 <div class="parallax"></div>
